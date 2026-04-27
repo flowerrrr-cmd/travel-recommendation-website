@@ -9,25 +9,46 @@
 
 <nav>
 <a href="index.html">Home</a> |
-<a href="about.html">About</a> |
-<a href="contact.html">Contact</a>
+<a href="about.html">About Us</a> |
+<a href="contact.html">Contact Us</a>
 </nav>
 
-<h2>Search</h2>
-<input type="text" placeholder="Search...">
-<button>Search</button>
+<br>
 
-<h2>Beaches</h2>
-<img src="https://via.placeholder.com/200">
-<img src="https://via.placeholder.com/200">
+<input type="text" id="search" placeholder="Search beaches, temples, countries">
+<button onclick="search()">Search</button>
+<button onclick="clearResults()">Clear</button>
 
-<h2>Temples</h2>
-<img src="https://via.placeholder.com/200">
-<img src="https://via.placeholder.com/200">
+<div id="results"></div>
 
-<h2>Countries</h2>
-<img src="https://via.placeholder.com/200">
-<img src="https://via.placeholder.com/200">
+<script>
+function search() {
+  let input = document.getElementById("search").value.toLowerCase();
+  let output = "";
+
+  if (input.includes("beach")) {
+    output = "<h2>Beaches</h2>" +
+    "<img src='https://via.placeholder.com/200'>" +
+    "<img src='https://via.placeholder.com/200'>";
+  }
+  else if (input.includes("temple")) {
+    output = "<h2>Temples</h2>" +
+    "<img src='https://via.placeholder.com/200'>" +
+    "<img src='https://via.placeholder.com/200'>";
+  }
+  else if (input.includes("country")) {
+    output = "<h2>Countries</h2>" +
+    "<img src='https://via.placeholder.com/200'>" +
+    "<img src='https://via.placeholder.com/200'>";
+  }
+
+  document.getElementById("results").innerHTML = output;
+}
+
+function clearResults() {
+  document.getElementById("results").innerHTML = "";
+}
+</script>
 
 </body>
 </html>
