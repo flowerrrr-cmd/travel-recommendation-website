@@ -2,9 +2,10 @@
 <html>
 <head>
 <title>Travel Recommendation</title>
-  <p>This website helps users find travel recommendations for beaches, temples, and countries. Use the search feature to explore destinations with images.</p>
 </head>
 <body>
+
+<p>This website helps users find travel recommendations for beaches, temples, and countries. Use the search feature to explore destinations with images.</p>
 
 <h1>Welcome to Travel Recommendation Website</h1>
 
@@ -29,18 +30,18 @@ function search() {
 
   if (input.includes("beach")) {
     output = "<h2>Beaches</h2>" +
-   "<img src='https://picsum.photos/200?1'>" +
-"<img src='https://picsum.photos/200?2'>"
+    "<img src='https://picsum.photos/200/150?random=1'>" +
+    "<img src='https://picsum.photos/200/150?random=2'>";
   }
   else if (input.includes("temple")) {
     output = "<h2>Temples</h2>" +
-   "<img src='https://picsum.photos/200?3'>" +
-"<img src='https://picsum.photos/200?4'>"
+    "<img src='https://picsum.photos/200/150?random=3'>" +
+    "<img src='https://picsum.photos/200/150?random=4'>";
   }
   else if (input.includes("country")) {
     output = "<h2>Countries</h2>" +
-   "<img src='https://picsum.photos/200?5'>" +
-"<img src='https://picsum.photos/200?6'>"
+    "<img src='https://picsum.photos/200/150?random=5'>" +
+    "<img src='https://picsum.photos/200/150?random=6'>";
   }
 
   document.getElementById("results").innerHTML = output;
