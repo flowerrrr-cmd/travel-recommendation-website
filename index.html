@@ -29,18 +29,18 @@ function search() {
 
   if (input.includes("beach")) {
     output = "<h2>Beaches</h2>" +
-    "<img src='https://via.placeholder.com/200'>" +
-    "<img src='https://via.placeholder.com/200'>";
+   "<img src='https://picsum.photos/200?1'>" +
+"<img src='https://picsum.photos/200?2'>"
   }
   else if (input.includes("temple")) {
     output = "<h2>Temples</h2>" +
-    "<img src='https://via.placeholder.com/200'>" +
-    "<img src='https://via.placeholder.com/200'>";
+   "<img src='https://picsum.photos/200?3'>" +
+"<img src='https://picsum.photos/200?4'>"
   }
   else if (input.includes("country")) {
     output = "<h2>Countries</h2>" +
-    "<img src='https://via.placeholder.com/200'>" +
-    "<img src='https://via.placeholder.com/200'>";
+   "<img src='https://picsum.photos/200?5'>" +
+"<img src='https://picsum.photos/200?6'>"
   }
 
   document.getElementById("results").innerHTML = output;
