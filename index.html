@@ -30,18 +30,18 @@ function search() {
 
   if (input.includes("beach")) {
     output = "<h2>Beaches</h2>" +
-    "<img src='https://picsum.photos/200/150?random=1'>" +
-    "<img src='https://picsum.photos/200/150?random=2'>";
+    "<img src='https://placekitten.com/200/150'>" +
+    "<img src='https://placekitten.com/201/150'>";
   }
   else if (input.includes("temple")) {
     output = "<h2>Temples</h2>" +
-    "<img src='https://picsum.photos/200/150?random=3'>" +
-    "<img src='https://picsum.photos/200/150?random=4'>";
+    "<img src='https://placekitten.com/202/150'>" +
+    "<img src='https://placekitten.com/203/150'>";
   }
   else if (input.includes("country")) {
     output = "<h2>Countries</h2>" +
-    "<img src='https://picsum.photos/200/150?random=5'>" +
-    "<img src='https://picsum.photos/200/150?random=6'>";
+    "<img src='https://placekitten.com/204/150'>" +
+    "<img src='https://placekitten.com/205/150'>";
   }
 
   document.getElementById("results").innerHTML = output;
